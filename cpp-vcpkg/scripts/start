@@ -9,5 +9,6 @@ export HISTFILE=/a/local/.bash_history
 
 export PATH=/a/scripts:$PATH
 export PATH=$PATH:/a/scripts/msvc
+export PATH=$PATH:/a/local/vcpkg
 
 code /a --reuse-window

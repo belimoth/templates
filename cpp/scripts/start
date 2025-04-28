@@ -8,6 +8,6 @@ history -c
 export HISTFILE=/a/local/.bash_history
 
 export PATH=/a/scripts:$PATH
-export PATH=/a/scripts/msvc:$PATH
+export PATH=$PATH:/a/scripts/msvc
 
 code /a --reuse-window
