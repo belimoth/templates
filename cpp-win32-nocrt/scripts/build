@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -o errexit
+
+rm --recursive --force local/build
+mkdir --parents        local/build
+cd                     local/build
+
+# clang
+
+clang -Wall -Wextra -Os -nostdlib -ffreestanding -lkernel32 --output main.exe /a/source/main.cpp
+
+# msvc
+
+# todo

@@ -8,7 +8,6 @@ cd                     local/build
 
 # clang
 
-# [[ $( command -v clang ) ]] || { echo "error: clang required"; exit 1; }
 # clang -Wall -Wextra /a/source/main.cpp --output main.exe
 
 # msvc
