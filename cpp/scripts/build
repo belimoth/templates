@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -o errexit
+
+rm --recursive --force local/build
+mkdir --parents        local/build
+cd                     local/build
+
+# clang
+
+# [[ $( command -v clang ) ]] || { echo "error: clang required"; exit 1; }
+# clang -Wall -Wextra /a/source/main.cpp --output main.exe
+
+# msvc
+
+source msvc.sh
+cl a:/source/main.cpp -nologo -GR- -Wall -WX -link -entry:mainCRTStartup -out:main.exe
